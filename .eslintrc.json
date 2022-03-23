@@ -1,0 +1,90 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
+  "ignorePatterns": ["*.js", "*.mjs"],
+  "rules": {
+    "react/button-has-type": ["off"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "react/no-unused-prop-types": "off",
+    "react/require-default-props": "off",
+    "react/function-component-definition": "off",
+
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+
+    "multiline-ternary": "off",
+    "import/no-cycle": "off",
+    "camelcase": "off",
+    "no-return-await": "off",
+    "space-before-function-paren": "off",
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
+    "no-plusplus": "off",
+    "no-unused-expressions": "off",
+    "no-async-promise-executor": "off",
+    "no-param-reassign": "off",
+    "no-nested-ternary": "off",
+    "no-underscore-dangle": "off",
+    "no-continue": "off",
+    "no-await-in-loop": "off",
+    "allowForLoopAfterthoughts": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/media-has-caption": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
