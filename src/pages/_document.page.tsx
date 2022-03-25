@@ -7,6 +7,8 @@ import Document, {
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
+import 'dotenv/config';
+
 class CustomDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     // Add support for styled-components on next.js build. Code copied from https://github.com/vercel/next.js/blob/master/examples/with-styled-components/pages/_document.js

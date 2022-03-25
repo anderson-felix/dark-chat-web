@@ -64,7 +64,9 @@ const Home: React.FC = () => {
     if (newUsername.length < 3) return;
 
     setConfirmLoading(true);
-    const avatar = `https://joeschmoe.io/api/v1/${messages.length + 1}`;
+    const avatar = `https://joeschmoe.io/api/v1/${Math.round(
+      Math.random() * 1000,
+    )}`;
     window.localStorage.setItem('username', newUsername);
     window.localStorage.setItem('avatar', avatar);
 
@@ -88,7 +90,7 @@ const Home: React.FC = () => {
   };
 
   useEffect(() => {
-    const newSocket = io(`http://localhost:3000`);
+    const newSocket = io(String(process.env.NEXT_PUBLIC_API_URL));
     setSocket(newSocket);
 
     return () => {
