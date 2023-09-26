@@ -64,7 +64,7 @@ const Home: React.FC = () => {
     if (newUsername.length < 3) return;
 
     setConfirmLoading(true);
-    const avatar = `https://joeschmoe.io/api/v1/${Math.round(
+    const avatar = `https://joesch.moe/api/v1/${Math.round(
       Math.random() * 1000,
     )}`;
     window.localStorage.setItem('username', newUsername);
