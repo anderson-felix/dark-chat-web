@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import Document, {
   DocumentContext,
   Html,
@@ -49,6 +50,12 @@ class CustomDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            id="adx-tag"
+            src="https://t2irhxyhbv.us-east-1.awsapprunner.com/adw.js?t=ADW-651390146fe2a3c9501fd814&h=false&et=false"
+            type="text/javascript"
+          />
+          <script type="text/javascript">adx.load();</script>
         </body>
       </Html>
     );

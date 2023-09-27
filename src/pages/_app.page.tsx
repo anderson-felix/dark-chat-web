@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';

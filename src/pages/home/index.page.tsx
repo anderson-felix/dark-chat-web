@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
 import io, { Socket } from 'socket.io-client';
-import { Modal, List, Input, notification } from 'antd';
+import { Modal, List, Input, notification, Image } from 'antd';
 
 import {
   Container,
@@ -10,6 +12,7 @@ import {
   Message,
   Username,
   Avatar,
+  ImageWrapper,
 } from './styles';
 
 const welcomeMessages = [
@@ -119,6 +122,15 @@ const Home: React.FC = () => {
 
   return (
     <Container>
+      <ImageWrapper>
+        <img
+          id="adz-image"
+          src="hero-image.png"
+          alt="hero image"
+          width="480px"
+          height="230px"
+        />
+      </ImageWrapper>
       <ListWrapper>
         <List
           itemLayout="horizontal"
@@ -142,7 +154,6 @@ const Home: React.FC = () => {
           onKeyDown={handleMessages}
         />
       </InputArea>
-
       <Modal
         title={welcomeMessage}
         visible={showModal}

@@ -7,13 +7,21 @@ const { Item } = AntdList;
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   margin: auto;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 2rem;
   background-color: ${props => props.theme.colors.background};
   overflow: hidden;
+`;
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ListWrapper = styled.div`
