@@ -14,14 +14,13 @@ export const Container = styled.div`
   row-gap: 2rem;
   background-color: ${props => props.theme.colors.background};
   overflow: hidden;
+  z-index: 10;
 `;
 
 export const ImageWrapper = styled.div`
-  width: 100%;
+  margin: auto;
   height: 15rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const ListWrapper = styled.div`

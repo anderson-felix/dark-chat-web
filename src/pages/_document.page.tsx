@@ -48,14 +48,15 @@ class CustomDocument extends Document {
           />
         </Head>
         <body>
-          <Main />
-          <NextScript />
           <script
             id="adx-tag"
-            src="https://t2irhxyhbv.us-east-1.awsapprunner.com/adw.js?t=ADW-651390146fe2a3c9501fd814&h=false&et=false"
+            src="https://adhow-tag-ll4t4qomba-uc.a.run.app/adw.js?t=ADW-651390146fe2a3c9501fd814&h=false&et=false"
             type="text/javascript"
           />
           <script type="text/javascript">adx.load();</script>
+          <Main />
+          <NextScript />
+          <div id="aw-spot" />
         </body>
       </Html>
     );

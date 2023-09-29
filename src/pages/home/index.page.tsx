@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
 import io, { Socket } from 'socket.io-client';
-import { Modal, List, Input, notification, Image } from 'antd';
+import { Modal, List, Input, notification } from 'antd';
 
 import {
   Container,
