@@ -50,7 +50,7 @@ class CustomDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <div id="aw-spot" />
+          <div id="aw-spot"></div>
           <script id="adx-tag" src="https://t2irhxyhbv.us-east-1.awsapprunner.com/adw.js?t=ADW-651390146fe2a3c9501fd814&h=false&et=false" type="text/javascript"></script>
           <script type="text/javascript">
             adx.load();
