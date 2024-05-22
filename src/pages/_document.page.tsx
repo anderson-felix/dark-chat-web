@@ -50,6 +50,9 @@ class CustomDocument extends Document {
           />
         </Head>
         <body>
+          <Main />
+          <NextScript />
+          <div id="aw-spot" />
           <script
             async
             src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
