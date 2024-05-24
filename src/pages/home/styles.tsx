@@ -19,8 +19,10 @@ export const Container = styled.div`
 
 export const ImageWrapper = styled.div`
   margin: auto;
-  height: 15rem;
+  // height: 15rem;
   display: flex;
+  width: 300px;
+  height: 250px;
 `;
 
 export const ListWrapper = styled.div`

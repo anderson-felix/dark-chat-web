@@ -52,39 +52,6 @@ class CustomDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <div id="aw-spot" />
-          <script
-            async
-            src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-          />
-
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.googletag = window.googletag || {cmd: []};
-
-              googletag.cmd.push(function() {
-
-                googletag.defineSlot('/7298353/Home', [300, 250], 'div-gpt-ad-1716408471946-0').addService(googletag.pubads());
-
-                googletag.pubads().enableSingleRequest();
-
-                googletag.enableServices();
-
-              });
-        `,
-            }}
-          />
-
-          <div id="div-gpt-ad-1716408471946-0">
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1716408471946-0'); });
-                `,
-              }}
-            />
-          </div>
           <Main />
           <NextScript />
           <div id="aw-spot" />
