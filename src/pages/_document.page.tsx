@@ -64,25 +64,24 @@ class CustomDocument extends Document {
               window.googletag = window.googletag || {cmd: []};
 
               googletag.cmd.push(function() {
-            
-                googletag.defineSlot('/7298353/Home', [1, 1], 'div-gpt-ad-1716410623501-0').addService(googletag.pubads());
-            
+
+                googletag.defineSlot('/7298353/Home', [300, 250], 'div-gpt-ad-1716408471946-0').addService(googletag.pubads());
+
                 googletag.pubads().enableSingleRequest();
-            
+
                 googletag.enableServices();
-            
+
               });
         `,
             }}
           />
 
-          <div id="div-gpt-ad-1716410623501-0">
+          <div id="div-gpt-ad-1716408471946-0">
             <script
               dangerouslySetInnerHTML={{
                 __html: `
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1716410623501-0'); });
-            
-          `,
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1716408471946-0'); });
+                `,
               }}
             />
           </div>
